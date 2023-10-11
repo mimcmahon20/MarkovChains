@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    
+    <div
+      id="chart-container"
+      style="width: clamp(70vw, 1500px, 90vw); margin: auto; position: relative;"
+    >
+      <div id="playerBalance" style="position: absolute; font-size: 3em"></div>
+      <canvas id="stockChart" style="padding-top: 26px"></canvas>
+    </div>
+    <div id="stockState"></div>
+    <div id="stocksHeldDisplay"></div>
+    <div id="stockPriceDisplay"></div>
+    <div class="buy-sell-container">
+      <button id="stockBuyButton">Buy</button>
+      <button id="stockSellButton">Sell</button>
+    </div>
+    <div class="start-stop-container">
+      <button id="startButton">Start Game</button>
+      <button id="resetButton">Reset Game</button>
+    </div>
+  </body>
+  <script src="bundle.js"></script>
+  <!-- <script src="./js/game.js" type="module"></script> -->
+</html>

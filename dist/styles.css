@@ -1,0 +1,48 @@
+body {
+    margin: 0; /* remove default margin */
+    font-family: 'Courier New', Courier, monospace; /* monospaced font */
+    background-color: #1f1f1f; /* light grey background */
+    color: rgba(255, 255, 255, 0.824);
+    font-size: 24px;
+}
+
+.buy-sell-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+/* Common styles for both buttons */
+button {
+    font-family: 'Courier New', Courier, monospace; /* monospaced font */
+    text-transform: uppercase; /* convert text to uppercase */
+    padding: 10px 20px; /* padding around the text */
+    border: none; /* remove default border */
+    border-radius: 8px; /* slightly rounded corners */
+    cursor: pointer; /* hand cursor on hover */
+    transition: background-color 0.3s; /* smooth transition for hover effect */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#stockBuyButton {
+    background-color: #4CAF50; /* green background */
+    color: white; /* white text */
+    font-size: 36px;
+    width: 200px;
+    height: 100px;
+}
+
+#stockSellButton {
+    background-color: #FF5252; /* red background */
+    color: white; /* white text */
+    font-size: 36px;
+    width: 175px;
+    height: 85px;
+}
+
+/* Hover effect for both buttons */
+button:hover {
+    opacity: 0.8; /* slightly transparent on hover */
+}
